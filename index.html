@@ -1,189 +1,148 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Care Guide App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            max-width: 480px;
+            margin: 0 auto;
+            height: 100vh;
+        }
+    </style>
 </head>
-<body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Plant Care Guide App&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 480px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: 100vh;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body class="bg-gray-50 font-sans"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="app" class="flex flex-col h-full"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Content Area --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="content" class="flex-1 overflow-auto p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Home Screen --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="home-screen"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white rounded-lg shadow-md mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h1 class="text-2xl font-bold text-green-700 mb-4"&gt;Welcome to PlantCare&lt;/h1&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="grid grid-cols-2 gap-4 mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="bg-green-100 p-4 rounded-lg text-center hover:bg-green-200 transition"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;i class="fas fa-leaf text-3xl text-green-600 mb-2"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h3 class="font-medium"&gt;My Plants&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="bg-blue-100 p-4 rounded-lg text-center hover:bg-blue-200 transition"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;i class="far fa-calendar text-3xl text-blue-600 mb-2"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h3 class="font-medium"&gt;Care Calendar&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Upcoming Tasks --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white rounded-lg shadow-md"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h2 class="text-xl font-semibold mb-3"&gt;Upcoming Tasks&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="space-y-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="bg-gray-50 p-3 rounded-md flex justify-between items-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;h3 class="font-medium"&gt;Snake Plant&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;p class="text-sm text-gray-600"&gt;Water plant&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-sm text-gray-500"&gt;2024-11-20&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="bg-gray-50 p-3 rounded-md flex justify-between items-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;h3 class="font-medium"&gt;Monstera&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;p class="text-sm text-gray-600"&gt;Fertilize&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-sm text-gray-500"&gt;2024-11-22&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Plants Screen (Hidden by Default) --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="plants-screen" class="hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="relative"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                            </span>type="search"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                            </span>placeholder="Search plants..."<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                            </span>class="w-full p-2 pl-10 border rounded-lg bg-white"</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;i class="fas fa-search absolute left-3 top-3 text-gray-400"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Plant Cards --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="space-y-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-white rounded-lg shadow-md overflow-hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="p-4 flex items-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;img<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                                </span>src="https://via.placeholder.com/120"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                                </span>alt="Snake Plant"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                                </span>class="w-24 h-24 rounded-lg object-cover mr-4"</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h3 class="font-semibold text-lg"&gt;Snake Plant&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p class="text-sm text-gray-600 italic mb-2"&gt;Sansevieria trifasciata&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="text-sm"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;p&gt;Difficulty: Easy&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;p&gt;Water: Every 2-3 weeks&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;p&gt;Light: Low to bright indirect&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-white rounded-lg shadow-md overflow-hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="p-4 flex items-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;img<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                                </span>src="https://via.placeholder.com/120"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                                </span>alt="Monstera"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                                </span>class="w-24 h-24 rounded-lg object-cover mr-4"</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h3 class="font-semibold text-lg"&gt;Monstera&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p class="text-sm text-gray-600 italic mb-2"&gt;Monstera deliciosa&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="text-sm"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;p&gt;Difficulty: Moderate&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;p&gt;Water: Weekly&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;p&gt;Light: Bright indirect&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Bottom Navigation --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-white border-t"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-5 text-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="showScreen('home')" class="p-2 text-green-600"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i class="fas fa-home text-xl"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-xs"&gt;Home&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="showScreen('plants')" class="p-2 text-gray-600"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i class="fas fa-leaf text-xl"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-xs"&gt;Plants&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="p-2 text-gray-600"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i class="far fa-calendar text-xl"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-xs"&gt;Calendar&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="p-2 text-gray-600"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i class="fas fa-camera text-xl"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-xs"&gt;Camera&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="p-2 text-gray-600"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i class="fas fa-book-open text-xl"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-xs"&gt;Guide&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>function showScreen(screenName) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>// Reset all navigation buttons</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const navButtons = document.querySelectorAll('button');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>navButtons.forEach(button =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>button.classList.remove('text-green-600');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>button.classList.add('text-gray-600');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>});</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>// Show the selected screen</p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (screenName === 'home') {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>document.getElementById('home-screen').classList.remove('hidden');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>document.getElementById('plants-screen').classList.add('hidden');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>document.querySelector('button:first-child').classList.remove('text-gray-600');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>document.querySelector('button:first-child').classList.add('text-green-600');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>} else if (screenName === 'plants') {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>document.getElementById('home-screen').classList.add('hidden');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>document.getElementById('plants-screen').classList.remove('hidden');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>document.querySelector('button:nth-child(2)').classList.remove('text-gray-600');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>document.querySelector('button:nth-child(2)').classList.add('text-green-600');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+<body class="bg-gray-50 font-sans">
+    <div id="app" class="flex flex-col h-full">
+        <!-- Content Area -->
+        <div id="content" class="flex-1 overflow-auto p-4">
+            <!-- Home Screen -->
+            <div id="home-screen">
+                <div class="bg-white rounded-lg shadow-md mb-4">
+                    <div class="p-4">
+                        <h1 class="text-2xl font-bold text-green-700 mb-4">Welcome to PlantCare</h1>
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div class="bg-green-100 p-4 rounded-lg text-center hover:bg-green-200 transition cursor-pointer">
+                                <i class="fas fa-leaf text-3xl text-green-600 mb-2"></i>
+                                <h3 class="font-medium">My Plants</h3>
+                            </div>
+                            <div class="bg-blue-100 p-4 rounded-lg text-center hover:bg-blue-200 transition cursor-pointer">
+                                <i class="far fa-calendar text-3xl text-blue-600 mb-2"></i>
+                                <h3 class="font-medium">Care Calendar</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Upcoming Tasks -->
+                <div class="bg-white rounded-lg shadow-md">
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold mb-3">Upcoming Tasks</h2>
+                        <div class="space-y-2">
+                            <div class="bg-gray-50 p-3 rounded-md flex justify-between items-center">
+                                <div>
+                                    <h3 class="font-medium">Snake Plant</h3>
+                                    <p class="text-sm text-gray-600">Water plant</p>
+                                </div>
+                                <span class="text-sm text-gray-500">2024-11-20</span>
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded-md flex justify-between items-center">
+                                <div>
+                                    <h3 class="font-medium">Monstera</h3>
+                                    <p class="text-sm text-gray-600">Fertilize</p>
+                                </div>
+                                <span class="text-sm text-gray-500">2024-11-22</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Plants Screen (Hidden by Default) -->
+            <div id="plants-screen" class="hidden">
+                <div class="mb-4">
+                    <div class="relative">
+                        <input type="search" placeholder="Search plants..." class="w-full p-2 pl-10 border rounded-lg bg-white">
+                        <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                    </div>
+                </div>
+                <!-- Plant Cards -->
+                <div class="space-y-4">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="p-4 flex items-center">
+                            <img src="https://via.placeholder.com/120" alt="Snake Plant" class="w-24 h-24 rounded-lg object-cover mr-4">
+                            <div>
+                                <h3 class="font-semibold text-lg">Snake Plant</h3>
+                                <p class="text-sm text-gray-600 italic mb-2">Sansevieria trifasciata</p>
+                                <div class="text-sm">
+                                    <p>Difficulty: Easy</p>
+                                    <p>Water: Every 2-3 weeks</p>
+                                    <p>Light: Low to bright indirect</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="p-4 flex items-center">
+                            <img src="https://via.placeholder.com/120" alt="Monstera" class="w-24 h-24 rounded-lg object-cover mr-4">
+                            <div>
+                                <h3 class="font-semibold text-lg">Monstera</h3>
+                                <p class="text-sm text-gray-600 italic mb-2">Monstera deliciosa</p>
+                                <div class="text-sm">
+                                    <p>Difficulty: Moderate</p>
+                                    <p>Water: Weekly</p>
+                                    <p>Light: Bright indirect</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Navigation -->
+        <nav class="bg-white border-t">
+            <div class="grid grid-cols-5 text-center">
+                <button onclick="showScreen('home')" aria-label="Home" class="p-2 text-green-600">
+                    <i class="fas fa-home text-xl"></i>
+                    <p class="text-xs">Home</p>
+                </button>
+                <button onclick="showScreen('plants')" aria-label="Plants" class="p-2 text-gray-600">
+                    <i class="fas fa-leaf text-xl"></i>
+                    <p class="text-xs">Plants</p>
+                </button>
+                <button aria-label="Calendar" class="p-2 text-gray-600">
+                    <i class="far fa-calendar text-xl"></i>
+                    <p class="text-xs">Calendar</p>
+                </button>
+                <button aria-label="Camera" class="p-2 text-gray-600">
+                    <i class="fas fa-camera text-xl"></i>
+                    <p class="text-xs">Camera</p>
+                </button>
+                <button aria-label="Guide" class="p-2 text-gray-600">
+                    <i class="fas fa-book-open text-xl"></i>
+                    <p class="text-xs">Guide</p>
+                </button>
+            </div>
+        </nav>
+    </div>
+    <script>
+        function showScreen(screenName) {
+            const screens = ['home-screen', 'plants-screen'];
+            screens.forEach(screen => {
+                document.getElementById(screen).classList.toggle('hidden', screen !== `${screenName}-screen`);
+            });
+
+            const navButtons = document.querySelectorAll('nav button');
+            navButtons.forEach((button, index) => {
+                button.classList.toggle('text-green-600', screens[index] === `${screenName}-screen`);
+                button.classList.toggle('text-gray-600', screens[index] !== `${screenName}-screen`);
+            });
+        }
+    </script>
 </body>
+
 </html>
